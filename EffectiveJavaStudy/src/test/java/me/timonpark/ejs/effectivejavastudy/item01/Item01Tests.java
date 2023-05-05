@@ -1,4 +1,4 @@
-package me.timonpark.ejs.effectivejavastudy;
+package me.timonpark.ejs.effectivejavastudy.item01;
 
 import me.timonpark.ejs.effectivejavastudy.item01.Car;
 import me.timonpark.ejs.effectivejavastudy.item01.CarFactory;
@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class Item01Tests {
 
     @Test
-    void ConstructorTest(){
+    void constructorTest(){
         // 생성자 방식
         Car electricCar = new ElectricCar("tesla", 1);
         Car electricCar2 = new ElectricCar("tesla", 1);
