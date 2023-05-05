@@ -40,7 +40,7 @@ public class Item02Tests {
         nutritionFacts02.setCarbohydrate(27);
 
         /**
-         * 빌더패턴 (builder pattern)
+         * 빌더패턴 (Builder Pattern)
          * 객체 생성시 모양은 자바빈즈 패턴과 흡사하나 불변성을 보장한다
          */
 
@@ -53,7 +53,7 @@ public class Item02Tests {
                 .build();
 
         /**
-         * Lombok으로 만든 빌더패턴 (builder pattern)
+         * Lombok으로 만든 빌더패턴 (Builder Pattern)
          */
 
         NutritionFacts04 nutritionFacts04 = NutritionFacts04.builder()
