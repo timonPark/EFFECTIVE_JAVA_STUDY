@@ -8,6 +8,9 @@ public class Car implements CarInterface {
     private int year;
     private String type;
 
+    public Car(final String model, final int year, final String electric) {
+    }
+
     @Override
     public String getModel() {
         return null;
@@ -23,20 +26,4 @@ public class Car implements CarInterface {
         return null;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        Car car = (Car) o;
-        return year == car.year && Objects.equals(model, car.model) && Objects.equals(type, car.type);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(model, year, type);
-    }
 }
